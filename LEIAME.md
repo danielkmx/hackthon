@@ -1,7 +1,7 @@
 
 O projeto consiste em um chatbox para captura de informaçōes que sao utilizadas para desenvolver uma jornada de viagem personalizada a partir de algumas APIs.
 
-## Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
+# Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
 
 ## Scripts disponiveis
 
