@@ -1,7 +1,7 @@
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import React, { Component } from 'react';
 import LocationSearchInput from './AutoComplete';
-import './Map.css';
+import '../App.css';
 
 export class MapContainer extends Component {
   state = { selectedPlace: { name: '' } };
