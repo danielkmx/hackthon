@@ -16,6 +16,10 @@
     "react-scripts": "3.4.1",
     "react-simple-chatbot": "^0.6.1"
   },
+  "engines": {
+    "npm": "5.7.1",
+    "node": "9.5.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
