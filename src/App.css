@@ -4,3 +4,41 @@
   display: flex;
   margin-top: 100px;
 }
+.fGPkxk{
+	background:#72B9D0 !important;
+	color: #333 !important;
+}
+
+.eDOvDv{
+background:#f5f8fb !important;
+color: #f5f8fb !important;
+height: 30px !important;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white !important;
+}
+
+
+.wcuuO:disabled {
+    background: #f5f8fb !important;
+}
+
+.wcuuO{
+
+	border-top: 0px !important;
+}
+
+.fkcGjN{
+	background:#72B9D0 !important;	
+}
