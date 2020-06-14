@@ -1,5 +1,7 @@
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import React, { Component } from 'react';
+import LocationSearchInput from './AutoComplete';
+import './Map.css';
 
 export class MapContainer extends Component {
   state = { selectedPlace: { name: '' } };
@@ -54,34 +56,42 @@ export class MapContainer extends Component {
   };
 
   render() {
+    console.log(this.props);
     const { google, position, shouldSearch } = this.props;
     const { lat, lng } = position;
     return (
-      <div>
-        {shouldSearch && this.fetchDirection(this.props)}
-        <Map
-          visible={false}
-          initialCenter={{
-            lat,
-            lng,
+      <div className="map-container">
+        <LocationSearchInput
+          handleInput={(value) => {
+            this.props.setFirstTime(false);
+            this.props.setPosition(value);
           }}
-          google={google}
-          zoom={14}
-          onReady={this.fetchPlaces}
-        >
-          <Marker onClick={this.onMarkerClick} name={'Current location'} />
+        />
+        <div className="map">
+          <Map
+            visible={true}
+            initialCenter={{
+              lat,
+              lng,
+            }}
+            google={google}
+            zoom={14}
+            onReady={this.fetchPlaces}
+          >
+            <Marker onClick={this.onMarkerClick} name={'Current location'} />
 
-          <InfoWindow onClose={this.onInfoWindowClose}>
-            <div>
-              <h1>{this.state.selectedPlace.name}</h1>
-            </div>
-          </InfoWindow>
-        </Map>
+            <InfoWindow onClose={this.onInfoWindowClose}>
+              <div>
+                <h1>{this.state.selectedPlace.name}</h1>
+              </div>
+            </InfoWindow>
+          </Map>
+        </div>
       </div>
     );
   }
 }
 
 export default GoogleApiWrapper({
-  apiKey: process.env.GOOGLE_API_KEY,
+  apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
 })(MapContainer);
