@@ -77,7 +77,6 @@ function App() {
   return (
     <div className="chat-container">
       <ChatBot
-        headerTitle="Speech Recognition"
         recognitionEnable={true}
         steps={[
           {
