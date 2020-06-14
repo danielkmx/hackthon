@@ -13,7 +13,7 @@ Usada para renderizar mapa do google na tela
 Usada para pegar informaçoes de estabelecimentos em geral
 
 
-Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
+## Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
 
 ## Scripts disponiveis
 
