@@ -49,57 +49,40 @@ function App() {
             id: '1',
             component: (
               <div>
-                <strong>Oi Renato, eu sou o seu parceiro de bordo, o Chapa!</strong> Eu vou te
-                ajudar a estar no lugar certo, do jeito certo e na hora certa 🙏
+                <strong>Oi Renato, eu sou o seu parceiro de bordo, o Chapa!</strong>
               </div>
             ),
-            trigger: () => {
-              return 2;
-            },
+            trigger: 2,
           },
           {
             id: '2',
             component: (
               <div>
-                Você pode conta comigo para te ajudar e ver a sua programação completa após definir
-                o destino.
+                Vou te ajudar a cadastrar todas as suas preferências, asssim poderemos montar uma
+                jornada completa para você.
               </div>
             ),
-            trigger: () => {
-              (async () => {
-                console.time('Slept for');
-                await sleep(3000);
-                console.timeEnd('Slept for');
-              })();
-              return 3;
-            },
+            trigger: 3,
           },
           {
             id: '3',
             component: (
               <div>
-                Como estar no lugar certo e na hora certa.
+                Você terá acesso a:
                 <ul>
                   <li>
-                    Encontrar <strong>Paradas Seguras</strong> 🅿️ recomendadas.
+                    <strong>Paradas Seguras</strong> 🅿️.
                   </li>
                   <li>
-                    Saber onde são os <strong>Postos de Gasolina</strong>. ⛽
+                    <strong>Postos de Qualidade</strong> ⛽.
                   </li>
                   <li>
-                    Comer nos <strong>Restaurantes</strong> 🍛 mais adequados para você.
+                    <strong>Restaurantes</strong> 🍛 do seu gosto.
                   </li>
                 </ul>
               </div>
             ),
-            trigger: () => {
-              (async () => {
-                console.time('Slept for');
-                await sleep(1000);
-                console.timeEnd('Slept for');
-              })();
-              return '3.1';
-            },
+            trigger: `3.1`,
           },
           {
             id: '3.1',
