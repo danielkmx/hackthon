@@ -17,12 +17,12 @@ Voce tambem vai ver a lista de erros e warnings no console.
 
 ## APIs
 
-### Directions API
+### Directions API (https://developers.google.com/maps/documentation/directions/start)
 Usada para pegar informaçoes da rota da viagem a partir do ponto inicial e o destino final;
-### Geocoding API
+### Geocoding API (https://developers.google.com/maps/documentation/geocoding/start)
 Usada para pegar dados da geolocalizaçao do destino final do usuario;
-### Maps JavaScript API
+### Maps JavaScript API (https://developers.google.com/maps/documentation/javascript/tutorial)
 Usada para renderizar mapa do google na tela
-### Places API
+### Places API (https://developers.google.com/places/web-service/intro)
 Usada para pegar informaçoes de estabelecimentos em geral
 
